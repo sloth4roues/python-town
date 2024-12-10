@@ -30,13 +30,15 @@ Voici l'architecture du projet :
 ```
 ├── barman.py
 ├── brigand.py
+├── couleurs.py
 ├── cowboy.py
 ├── dame.py
+├── fossoyeur.py
 ├── humain.py
 ├── main.py
+├── README.md
 ├── sherif.py
-└── couleurs.py
-└── README.md
+├── trappeur.py
 └── test.py - inutile en l'état, c'est mon ancien main, je le laisse pour voir à quoi ressembler l'ancienne logique
 ```
 
