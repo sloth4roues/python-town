@@ -57,6 +57,8 @@ Voici l'architecture du projet :
     - **Dame** : Une dame qui peut être kidnappée, mais aussi `changer_robe` ou `hurler`.
     - **Sherif** : Un sherif qui peut `emprisonner` des brigands.
     - **Barman** : Le barman qui `sert` des boissons.
+    - **Fossoyeur** : Le fossoyeur peut `enterrer` d'autres personnages - pour le moment non fonctionnel
+    - **Trappeur** : Le trappeur peut `cartographier` les différents endroits - pour le moment non fonctionnel aussi
 
 2. **Interaction et héritage** :
     - Utilisation de l'héritage pour créer des personnages dérivés de `Humain`, chacun ayant ses comportements uniques.
