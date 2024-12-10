@@ -1,7 +1,6 @@
 from humain import Humain
 from couleurs import Couleurs as C
 
-
 class Fossoyeur(Humain):
     def __init__(self, nom, boisson="absinthe", enterrement=0):
         super().__init__(nom, boisson)
