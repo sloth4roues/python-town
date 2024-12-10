@@ -4,6 +4,8 @@ from dame import Dame
 from cowboy import Cowboy
 from barman import Barman
 from sherif import Sherif
+from trappeur import Trappeur
+from fossoyeur import Fossoyeur
 from couleurs import Couleurs as C
 
 # méthode histoire() - teste les personnages et leurs interactions
@@ -18,6 +20,8 @@ def histoire():
     dame = Dame("Jolyne", "limonade")
     barman = Barman("Speedwagon", "liqueur de pêche")
     sherif = Sherif("Josuke", "jus")
+    trappeur = Trappeur("Stroheim", "Voodka")
+    fossoyeur = Fossoyeur("Kars", "hydromel")
     
     # présentation des personnages
     print(C.CYAN + "Nos personnages se présentent : \n" + C.RESET)
@@ -26,6 +30,8 @@ def histoire():
     dame.se_presenter()
     barman.se_presenter()
     sherif.se_presenter()
+    trappeur.se_presenter()
+    fossoyeur.se_presenter()
     
     print(C.CYAN + "\n### Le calme avant la tempête ###\n" + C.RESET)
     print(C.CYAN + "Tout semble aller bien dans la ville, jusqu'à ce que...\n" + C.RESET)
@@ -55,8 +61,11 @@ def histoire():
     brigand.kidnapper(dame)  # nouvelle tentative du brigand
     dame.afficher_etat()  # vérification de son état
     
-    print(C.CYAN + "\n### L'intervention du sheriff ###\n" + C.RESET)
+    print(C.CYAN + "\n### L'intervention du sheriff avec le trappeur ###\n" + C.RESET)
     sherif.parle("Je ne vais pas laisser un brigand troubler l'ordre dans cette ville.")
+    trappeur.parle("Je peux essayer de cartographier")
+    trappeur.cartographier()
+    sherif.parle("Ne t'en fais pas, je le vois !")
     sherif.emprisonner(brigand)  # le sheriff enferme le brigand
     brigand.parle("Tu ne m'as pas eu, sheriff ! Ce n'est qu'un retardement !")
     

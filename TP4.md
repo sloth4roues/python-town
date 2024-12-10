@@ -15,7 +15,7 @@ Une matrice est définie par sa taille, qui est donnée par un couple de nombres
 Dans ce TP, nous utilisons des matrices carrées, c'est-à-dire où le nombre de lignes est égal au nombre de colonnes (n x n).
 
 Exemple : A = 
--  ( 1   2   3 ) 
+- ( 1   2   3 ) 
 - ( 4   5   6 )
 - ( 7   8   9 )
 
@@ -65,8 +65,8 @@ B =
 - ( 7   8 )
 
 A x B = 
-- ( (1x5 + 2x7)  (1x6 + 2x8) )
-- ( (3x5 + 4x7)  (3x6 + 4x8) )
+- { (1x5 + 2x7)  (1x6 + 2x8) }
+- { (3x5 + 4x7)  (3x6 + 4x8) }
 
 = 
 - ( 19   22 )
